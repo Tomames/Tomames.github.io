@@ -1,9 +1,10 @@
 ---
 title: unison双向同步
 abbrlink: 5bfd8747
-date: 2019-02-22 16:17:41
 categories: 编程
 tags: linux
+translate_title: unison-bidirectional-synchronization
+date: 2019-02-22 16:17:41
 ---
 ### unison双向同步
 

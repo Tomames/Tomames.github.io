@@ -5,8 +5,8 @@ tags:
   - php
   - nginx
   - linux
-translate_title: lnmp-environment-construction
 abbrlink: 110e9b1f
+translate_title: lnmp-environment-construction
 date: 2019-02-22 14:52:06
 ---
 #### lnmp环境搭建

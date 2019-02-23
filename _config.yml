@@ -85,15 +85,15 @@ deploy:
   repo: https://github.com/Tomames/Tomames.github.io.git
   branch: master
 
-# # 标题翻译
-# translate_title:
-#   translate_way: baidu_no_appid  # google,youdao,baidu_with_appid,baidu_no_appid
-#   is_need_proxy: false     # true | false
-#   # proxy_url: http://localhost:50018 # Your proxy_url
-#   # youdao_api_key: '' # Your youdao_api_key
-#   # youdao_keyfrom: xxxx-blog # Your youdao_keyfrom
-#   # baidu_appid: '' # Your baidu_appid
-#   # baidu_appkey: '' # Your baidu_appkey
+# 标题翻译
+translate_title:
+  translate_way: baidu_no_appid  # google,youdao,baidu_with_appid,baidu_no_appid
+  is_need_proxy: false     # true | false
+  # proxy_url: http://localhost:50018 # Your proxy_url
+  # youdao_api_key: '' # Your youdao_api_key
+  # youdao_keyfrom: xxxx-blog # Your youdao_keyfrom
+  # baidu_appid: '' # Your baidu_appid
+  # baidu_appkey: '' # Your baidu_appkey
 
 
 abbrlink:

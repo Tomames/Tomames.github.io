@@ -3,7 +3,8 @@ title: win10专业版激活
 categories: 其他
 tags: windows10
 abbrlink: e86019d
-date: 2019-02-23 15:08:14
+translate_title: win10-professional-edition-activation
+date: 2018-10-23 15:08:14
 ---
 ### win10专业版激活（半年）
 #### 某一天公司打开电脑右下角有水印提示激活
