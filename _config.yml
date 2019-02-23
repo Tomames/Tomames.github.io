@@ -60,6 +60,7 @@ category_map:
   生活: life
   其他: other
 tag_map:
+  算法: algorithm
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
