@@ -16,7 +16,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -160,7 +160,7 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -171,7 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left 
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
 
@@ -327,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/99233f53.html">
+    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/1d69d5ac.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tomames">
@@ -347,7 +347,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/post/99233f53.html" class="post-title-link" itemprop="url">复杂度分析（一）</a>
+                <a href="/post/1d69d5ac.html" class="post-title-link" itemprop="url">hexo解析数学公式</a>
               
             
           </h2>
@@ -372,7 +372,7 @@
                 
               
 
-              <time title="创建时间：2019-02-23 17:38:38 / 修改时间：17:40:16" itemprop="dateCreated datePublished" datetime="2019-02-23T17:38:38+08:00">2019-02-23</time>
+              <time title="创建时间：2019-02-25 18:08:32 / 修改时间：18:24:03" itemprop="dateCreated datePublished" datetime="2019-02-25T18:08:32+08:00">2019-02-25</time>
             
 
             
@@ -432,13 +432,204 @@
         
           
             <p>
-              复杂度分析(一)时间复杂度分析
+              hexo解析数学公式今天写博客要用到数学公式
+用Typora写好之后执行hexo g &amp;&amp; hexo s 之后发现没有被解析成数学公式，原样输出了
+遂开始百度
+发现大家都说hexo-renderer-pandoc好
+按照指示下载pandoc装上
+卸载hexo默认的markd，安装hexo-renderer-pandoc
+npm uninstall hexo-renderer-marked --savenpm install hexo-renderer-pandoc --save
+然后hexo g报错unknown extension smart
+查完资料发现是pandoc版本问
+              ...
+            </p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/post/1d69d5ac.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/99233f53.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tomames">
+      <meta itemprop="description" content="若无闲事挂心头， 便是人间好时节">
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/large/8d2ab563gy1g0ge3vedgcj20m80m8q7q.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="风烟俱净，天山共色">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/99233f53.html" class="post-title-link" itemprop="url">复杂度分析</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-23 17:38:38" itemprop="dateCreated datePublished" datetime="2019-02-23T17:38:38+08:00">2019-02-23</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-25 18:06:10" itemprop="dateModified" datetime="2019-02-25T18:06:10+08:00">2019-02-25</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/programming/" itemprop="url" rel="index"><span itemprop="name">编程</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>
+              复杂度分析时间复杂度分析
 只关注循环执行次数最多的一段代码
 function sum($n)&#123;    $sum = 0;    for($i = 1; $i &lt;= $n; $i++)&#123;        $sum += $i;    &#125;    return $sum;&#125;
 只需要关注第4、5行代码，其他的都是常量执行时间，这个方法的时间复杂度是O(n)。
 
 加法法则：总复杂度等于量级最大的那段代码的复杂度
-function sum($n)&#123;    $sum_1 = 0;    $sum_2 = 0;    $sum_3 = 0;    f
+function sum($n)&#123;    $sum_1 = 0;    $sum_2 = 0;    $sum_3 = 0;    for(
               ...
             </p>
           <!--noindex-->
@@ -1304,7 +1495,7 @@ win+r,输入slmgr.vbs -xpr
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1348,7 +1539,9 @@ win+r,输入slmgr.vbs -xpr
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1544,6 +1737,83 @@ win+r,输入slmgr.vbs -xpr
   
 
   
+  
+
+  
+  
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow: auto hidden;
+}
+</style><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+    
+  
+
 
   
 
