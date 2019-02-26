@@ -17,7 +17,7 @@ tags: hexo
 
 发现大家都说`hexo-renderer-pandoc`好
 
-按照指示下载[pandoc](https://github.com/jgm/pandoc/releases/download/2.6/pandoc-2.6-windows-x86_64.msi)装上
+按照指示下载[pandoc](https://github.com/jgm/pandoc/releases/tag/2.6)装上
 
 卸载hexo默认的markd，安装`hexo-renderer-pandoc`
 
