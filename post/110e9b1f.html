@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="lnmp环境搭建安装nginx 添加nginx到yum源   rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm  安装nginx   yum -y install nginx  启动nginx  systemctl start nginx  开机启动">
+  <meta name="description" content="lnmp环境搭建 安装nginx  添加nginx到yum源  rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm  安装nginx  yum -y install nginx  启动nginx  systemctl star">
 <meta name="keywords" content="php,nginx,linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="lnmp环境搭建">
 <meta property="og:url" content="https://tomames.github.io/post/110e9b1f.html">
 <meta property="og:site_name" content="风烟俱净，天山共色">
-<meta property="og:description" content="lnmp环境搭建安装nginx 添加nginx到yum源   rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm  安装nginx   yum -y install nginx  启动nginx  systemctl start nginx  开机启动">
+<meta property="og:description" content="lnmp环境搭建 安装nginx  添加nginx到yum源  rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm  安装nginx  yum -y install nginx  启动nginx  systemctl star">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-02-23T08:14:41.075Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lnmp环境搭建">
-<meta name="twitter:description" content="lnmp环境搭建安装nginx 添加nginx到yum源   rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm  安装nginx   yum -y install nginx  启动nginx  systemctl start nginx  开机启动">
+<meta name="twitter:description" content="lnmp环境搭建 安装nginx  添加nginx到yum源  rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm  安装nginx  yum -y install nginx  启动nginx  systemctl star">
 
 
 
@@ -439,69 +439,73 @@
       
 
       
-        <h4 id="lnmp环境搭建"><a href="#lnmp环境搭建" class="headerlink" title="lnmp环境搭建"></a>lnmp环境搭建</h4><h5 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h5><ol>
-<li>添加nginx到yum源 </li>
+        <h4 id="lnmp环境搭建">lnmp环境搭建</h4>
+<h5 id="安装nginx">安装nginx</h5>
+<ol type="1">
+<li>添加nginx到yum源</li>
 </ol>
 <p><code>rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm</code></p>
-<ol>
-<li>安装nginx </li>
+<ol start="2" type="1">
+<li>安装nginx</li>
 </ol>
 <p><code>yum -y install nginx</code></p>
-<ol>
+<ol start="3" type="1">
 <li>启动nginx</li>
 </ol>
 <p><code>systemctl start nginx</code></p>
-<ol>
-<li>开机启动nginx </li>
+<ol start="4" type="1">
+<li>开机启动nginx</li>
 </ol>
 <p><code>systemctl enable nginx</code></p>
-<h5 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h5><ol>
+<h5 id="安装mysql">安装mysql</h5>
+<ol type="1">
 <li>下载yum rpm包</li>
 </ol>
-<p><code>wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm</code> </p>
-<ol>
+<p><code>wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm</code></p>
+<ol start="2" type="1">
 <li>安装rpm包</li>
 </ol>
 <p><code>rpm -ivh mysql57-community-release-el7-11.noarch.rpm</code></p>
-<ol>
-<li>安装mysql-server </li>
+<ol start="3" type="1">
+<li>安装mysql-server</li>
 </ol>
 <p><code>yum -y install mysql-server</code></p>
-<ol>
+<ol start="4" type="1">
 <li>启动mysql</li>
 </ol>
 <p><code>systemctl start mysqld</code></p>
-<ol>
-<li>开机启动mysql </li>
+<ol start="5" type="1">
+<li>开机启动mysql</li>
 </ol>
 <p><code>systemctl enable mysqld</code></p>
-<ol>
+<ol start="6" type="1">
 <li>查询初始密码</li>
 </ol>
-<p><code>cat /var/log/mysqld.log|grep &#39;A temporary password&#39;</code></p>
-<ol>
+<p><code>cat /var/log/mysqld.log|grep 'A temporary password'</code></p>
+<ol start="7" type="1">
 <li>初始密码登录</li>
 </ol>
 <p><code>mysql -u root -p</code></p>
 <p>8.修改root用户密码</p>
-<p><code>set password for root@localhost = password(&#39;123456&#39;);</code></p>
-<h5 id="安装php"><a href="#安装php" class="headerlink" title="安装php"></a>安装php</h5><ol>
+<p><code>set password for root@localhost = password('123456');</code></p>
+<h5 id="安装php">安装php</h5>
+<ol type="1">
 <li>添加php到yum源</li>
 </ol>
-<p><code>rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</code> </p>
+<p><code>rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</code></p>
 <p><code>rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</code></p>
-<ol>
+<ol start="2" type="1">
 <li>安装php及扩展</li>
 </ol>
 <p><code>yum install php71w php71w-fpm php71w-cli php71w-common php71w-devel php71w-gd php71w-pdo php71w-mysql php71w-mbstring php71w-bcmath</code></p>
-<ol>
+<ol start="3" type="1">
 <li>启动php</li>
 </ol>
 <p><code>systemctl start php-fpm</code></p>
-<ol>
+<ol start="4" type="1">
 <li>开机启动php</li>
 </ol>
-<p><code>systemctl enable php-fpm</code> </p>
+<p><code>systemctl enable php-fpm</code></p>
 
       
     </div>

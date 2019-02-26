@@ -96,20 +96,20 @@
 
 
 
-  <meta name="description" content="复杂度分析时间复杂度分析 只关注循环执行次数最多的一段代码 12345678function sum($n)&amp;#123;    $sum = 0;    for($i = 1; $i &amp;lt;= $n; $i++)&amp;#123;        $sum += $i;    &amp;#125;    return $sum;&amp;#125; 只需要关注第4、5行代码，其他的都是常量执行时间，这个方法的时间复杂度">
+  <meta name="description" content="复杂度分析 时间复杂度分析  只关注循环执行次数最多的一段代码 12345678function sum($n)&amp;#123;    $sum = 0;    for($i = 1; $i &amp;lt;= $n; $i++)&amp;#123;        $sum += $i;    &amp;#125;    return $sum;&amp;#125; 只需要关注第4、5行代码，其他的都是常量执行时间，这个方">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="复杂度分析">
 <meta property="og:url" content="https://tomames.github.io/post/99233f53.html">
 <meta property="og:site_name" content="风烟俱净，天山共色">
-<meta property="og:description" content="复杂度分析时间复杂度分析 只关注循环执行次数最多的一段代码 12345678function sum($n)&amp;#123;    $sum = 0;    for($i = 1; $i &amp;lt;= $n; $i++)&amp;#123;        $sum += $i;    &amp;#125;    return $sum;&amp;#125; 只需要关注第4、5行代码，其他的都是常量执行时间，这个方法的时间复杂度">
+<meta property="og:description" content="复杂度分析 时间复杂度分析  只关注循环执行次数最多的一段代码 12345678function sum($n)&amp;#123;    $sum = 0;    for($i = 1; $i &amp;lt;= $n; $i++)&amp;#123;        $sum += $i;    &amp;#125;    return $sum;&amp;#125; 只需要关注第4、5行代码，其他的都是常量执行时间，这个方">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws4.sinaimg.cn/large/8d2ab563gy1g0gh2zrm2aj20vq0fwjti.jpg">
 <meta property="og:image" content="http://wx3.sinaimg.cn/large/8d2ab563gy1g0gcrqqbvbj20vq0hsjsq.jpg">
-<meta property="og:updated_time" content="2019-02-25T10:06:10.973Z">
+<meta property="og:updated_time" content="2019-02-26T01:39:04.281Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="复杂度分析">
-<meta name="twitter:description" content="复杂度分析时间复杂度分析 只关注循环执行次数最多的一段代码 12345678function sum($n)&amp;#123;    $sum = 0;    for($i = 1; $i &amp;lt;= $n; $i++)&amp;#123;        $sum += $i;    &amp;#125;    return $sum;&amp;#125; 只需要关注第4、5行代码，其他的都是常量执行时间，这个方法的时间复杂度">
+<meta name="twitter:description" content="复杂度分析 时间复杂度分析  只关注循环执行次数最多的一段代码 12345678function sum($n)&amp;#123;    $sum = 0;    for($i = 1; $i &amp;lt;= $n; $i++)&amp;#123;        $sum += $i;    &amp;#125;    return $sum;&amp;#125; 只需要关注第4、5行代码，其他的都是常量执行时间，这个方">
 <meta name="twitter:image" content="https://ws4.sinaimg.cn/large/8d2ab563gy1g0gh2zrm2aj20vq0fwjti.jpg">
 
 
@@ -390,7 +390,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-25 18:06:10" itemprop="dateModified" datetime="2019-02-25T18:06:10+08:00">2019-02-25</time>
+                <time title="修改时间：2019-02-26 09:39:04" itemprop="dateModified" datetime="2019-02-26T09:39:04+08:00">2019-02-26</time>
               
             
           </span>
@@ -442,38 +442,42 @@
       
 
       
-        <h3 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h3><h4 id="时间复杂度分析"><a href="#时间复杂度分析" class="headerlink" title="时间复杂度分析"></a>时间复杂度分析</h4><ol>
+        <h3 id="复杂度分析">复杂度分析</h3>
+<h4 id="时间复杂度分析">时间复杂度分析</h4>
+<ol type="1">
 <li><p>只关注循环执行次数最多的一段代码</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">($n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    $sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">        $sum += $i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> $sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>只需要关注第4、5行代码，其他的都是常量执行时间，这个方法的时间复杂度是O(n)。</p>
-</li>
+<p>只需要关注第4、5行代码，其他的都是常量执行时间，这个方法的时间复杂度是O(n)。</p></li>
 <li><p>加法法则：总复杂度等于量级最大的那段代码的复杂度</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">($n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    $sum_1 = <span class="number">0</span>;</span><br><span class="line">    $sum_2 = <span class="number">0</span>;</span><br><span class="line">    $sum_3 = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= <span class="number">100</span>; $i++)&#123;</span><br><span class="line">        $sum_1 += $i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">    	$sum_2 += $i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">    	<span class="keyword">for</span>($j = <span class="number">1</span>; $j &lt;= $n; $j++)&#123;</span><br><span class="line">	    	$sum_3 += $i * $j;</span><br><span class="line">	    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> $sum_1 + $sum_2 + $sum_3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>第6、7行代码的时间复杂度是常量执行时间，第10、11行代码的时间复杂度是O(n)，第14、15、16行代码的时间复杂度是O(n<sup>2</sup>)，所以这个方法的时间复杂度是O(n<sup>2</sup>)。</p>
-</li>
+<p>第6、7行代码的时间复杂度是常量执行时间，第10、11行代码的时间复杂度是O(n)，第14、15、16行代码的时间复杂度是O(n<sup>2</sup>)，所以这个方法的时间复杂度是O(n<sup>2</sup>)。</p></li>
 <li><p>乘法法则：嵌套代码的复杂度等于嵌套内外代码的复杂度的乘积</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">($n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	$sum = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">    	$sum += f($i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> $sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span><span class="params">($n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    $sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">        $sum += $i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> $sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>如果f($n)的时间复杂度是常量，那sum($n)的时间复杂度就是O(n)，但是f($n)的时间复杂度是O(n)，所以sum($n)的时间复杂度是O(n<sup>2</sup>)。</p>
-<h4 id="常见的时间复杂度实例分析"><a href="#常见的时间复杂度实例分析" class="headerlink" title="常见的时间复杂度实例分析"></a>常见的时间复杂度实例分析</h4><p><img src="https://ws4.sinaimg.cn/large/8d2ab563gy1g0gh2zrm2aj20vq0fwjti.jpg" alt="image"></p>
-</li>
+<p>如果f(<span class="math inline">\(n)的时间复杂度是常量，那sum(\)</span>n)的时间复杂度就是O(n)，但是f(<span class="math inline">\(n)的时间复杂度是O(n)，所以sum(\)</span>n)的时间复杂度是O(n<sup>2</sup>)。</p>
+<h4 id="常见的时间复杂度实例分析">常见的时间复杂度实例分析</h4>
+<p><img src="https://ws4.sinaimg.cn/large/8d2ab563gy1g0gh2zrm2aj20vq0fwjti.jpg"></p></li>
 </ol>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span>($i &lt;= $n)&#123;</span><br><span class="line">    $i *= <span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>2<sup>x</sup> = n =&gt; x=log<sub>2</sub>n；该代码段执行log<sub>2</sub>n次，所以该代码段的时间复杂度是O(logn)</p>
 <p>log<sub>3</sub>n = log<sub>3</sub>2*log<sub>2</sub>n</p>
-<p><img src="http://wx3.sinaimg.cn/large/8d2ab563gy1g0gcrqqbvbj20vq0hsjsq.jpg" alt="image"></p>
-<h4 id="最好、最坏、平均、均摊时间复杂度"><a href="#最好、最坏、平均、均摊时间复杂度" class="headerlink" title="最好、最坏、平均、均摊时间复杂度"></a>最好、最坏、平均、均摊时间复杂度</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">find</span><span class="params">($array ,$x)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="keyword">foreach</span> ($array <span class="keyword">as</span> $key =&gt; $value) &#123;</span><br><span class="line">        <span class="keyword">if</span>($value == $x)&#123;</span><br><span class="line">            <span class="keyword">return</span> $key;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://wx3.sinaimg.cn/large/8d2ab563gy1g0gcrqqbvbj20vq0hsjsq.jpg"></p>
+<h4 id="最好最坏平均均摊时间复杂度">最好、最坏、平均、均摊时间复杂度</h4>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">find</span><span class="params">($array ,$x)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="keyword">foreach</span> ($array <span class="keyword">as</span> $key =&gt; $value) &#123;</span><br><span class="line">        <span class="keyword">if</span>($value == $x)&#123;</span><br><span class="line">            <span class="keyword">return</span> $key;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><strong>最好情况时间复杂度</strong> 如果x是第一个元素，那就不用遍历剩下的元素了，时间复杂度是O(1)；</p>
 <p><strong>最坏情况时间复杂度</strong>如果x是最后一个元素，就要遍历整个数组，时间复杂度是O(n);</p>
 <p><strong>平均时间复杂度</strong></p>
-<ol>
-<li>如果x在数组0~n-1位置中和不在数组中的概率相等<script type="math/tex; mode=display">
-\frac{(1+2+3+···+n+n)}{(n+1)} = \frac{n(n+3)}{2(n+1)}</script>​     <strong>平均时间复杂度</strong>是O(n)</li>
-<li>如果x在数组中的概率是1/2，在数组中各个元素的概率相等，为1/2n<script type="math/tex; mode=display">
-\frac{1}{2n}+\frac{2}{2n}+\frac{3}{2n}+···+\frac{n}{2n}+\frac{n}{2} = \frac{(3n+1)}{4}</script></li>
+<ol type="1">
+<li>如果x在数组0~n-1位置中和不在数组中的概率相等 <span class="math display">\[
+\frac{(1+2+3+···+n+n)}{(n+1)} = \frac{n(n+3)}{2(n+1)}
+\]</span> ​ <strong>平均时间复杂度</strong>是O(n)</li>
+<li><p>如果x在数组中的概率是1/2，在数组中各个元素的概率相等，为1/2n <span class="math display">\[
+\frac{1}{2n}+\frac{2}{2n}+\frac{3}{2n}+···+\frac{n}{2n}+\frac{n}{2} = \frac{(3n+1)}{4}
+\]</span></p>
+<p>这个值叫<strong>加权平均时间复杂度</strong>或者<strong>期望时间复杂度</strong>为O(n)</p></li>
 </ol>
-<p>   这个值叫<strong>加权平均时间复杂度</strong>或者<strong>期望时间复杂度</strong>为O(n)</p>
 <p><strong>均摊时间复杂度</strong>在代码执行的所有复杂度情况中绝大部分是低级别的复杂度，个别情况是高级别复杂度且发生具有时序关系时，可以将个别高级别复杂度均摊到低级别复杂度上。基本上均摊结果就等于低级别复杂度。</p>
-<h3 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h3><p>和时间复杂度的分析方法一样</p>
+<h3 id="空间复杂度">空间复杂度</h3>
+<p>和时间复杂度的分析方法一样</p>
 
       
     </div>
@@ -702,7 +706,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂度分析"><span class="nav-number">1.</span> <span class="nav-text">复杂度分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#时间复杂度分析"><span class="nav-number">1.1.</span> <span class="nav-text">时间复杂度分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常见的时间复杂度实例分析"><span class="nav-number">1.2.</span> <span class="nav-text">常见的时间复杂度实例分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最好、最坏、平均、均摊时间复杂度"><span class="nav-number">1.3.</span> <span class="nav-text">最好、最坏、平均、均摊时间复杂度</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#空间复杂度"><span class="nav-number">2.</span> <span class="nav-text">空间复杂度</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂度分析"><span class="nav-number">1.</span> <span class="nav-text">复杂度分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#时间复杂度分析"><span class="nav-number">1.1.</span> <span class="nav-text">时间复杂度分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常见的时间复杂度实例分析"><span class="nav-number">1.2.</span> <span class="nav-text">常见的时间复杂度实例分析</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最好最坏平均均摊时间复杂度"><span class="nav-number">1.3.</span> <span class="nav-text">最好、最坏、平均、均摊时间复杂度</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#空间复杂度"><span class="nav-number">2.</span> <span class="nav-text">空间复杂度</span></a></li></ol></div>
             
 
           </div>
