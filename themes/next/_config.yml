@@ -60,7 +60,7 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  #since: 2015
+  since: 2018
 
   # Icon between year and copyright info.
   icon:
@@ -120,7 +120,7 @@ seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
-index_with_subtitle: false
+index_with_subtitle: true
 
 # Automatically add external URL with BASE64 encrypt & decrypt.
 exturl: false
@@ -214,9 +214,9 @@ avatar:
   # You can also use other linking images.
   url: https://ws1.sinaimg.cn/large/8d2ab563gy1g0ge3vedgcj20m80m8q7q.jpg
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: ture
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
-  opacity: 1
+  opacity: 0.7
   # If true, the avatar would be rotated with the cursor.
   rotated: false
 
@@ -277,8 +277,8 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
-  length: 300
+  enable: false
+  length: 150
 
 # Read more button
 # If true, the read more button would be displayed in excerpt section.
@@ -453,12 +453,13 @@ math:
   per_page: true
 
   engine: mathjax
-  #engine: katex
+  # engine: katex
 
   # hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
   mathjax:
     # Use 2.7.1 as default, jsdelivr as default CDN, works everywhere even in China
     # cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
     # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com)
     cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
 
@@ -860,12 +861,12 @@ pace_theme: pace-theme-minimal
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
 canvas_nest:
-  enable: false
+  enable: true
   onmobile: true # display on mobile or not
-  color: '0,0,255' # RGB values, use ',' to separate
-  opacity: 0.5 # the opacity of line: 0~1
+  color: '120,120,120' # RGB values, use ',' to separate
+  opacity: 1 # the opacity of line: 0~1
   zIndex: -1 # z-index property of the background
-  count: 99 # the number of lines
+  count: 199 # the number of lines
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
@@ -972,10 +973,10 @@ vendors:
   # Internal version: 1.0.0
   # See: https://github.com/theme-next/theme-next-canvas-nest
   # Example:
-  # canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
-  # canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
-  canvas_nest:
-  canvas_nest_nomobile:
+  canvas_nest: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js
+  canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
+  # canvas_nest:
+  # canvas_nest_nomobile:
 
   # Internal version: 1.0.0
   # See: https://github.com/theme-next/theme-next-three
