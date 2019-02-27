@@ -21,7 +21,7 @@ date: 2019-02-27 15:43:37
 
 所以要用`file_get_content("php://input")`接收
 
-`GLOBLES['HTTP_RAW_POST_DATA']`在**php7**中已经**废弃**
+`$GLOBLES['HTTP_RAW_POST_DATA']`在**php7**中已经**废弃**
 
 **注意**
 
