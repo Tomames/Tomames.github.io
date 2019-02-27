@@ -123,7 +123,7 @@
   };
 </script>
 
-  <title>风烟俱净，天山共色</title>
+  <title>风烟俱净，天山共色 – 从流飘荡， 任意东西</title>
   
 
 
@@ -327,6 +327,176 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/26d08677.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tomames">
+      <meta itemprop="description" content="若无闲事挂心头， 便是人间好时节">
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/large/8d2ab563gy1g0ge3vedgcj20m80m8q7q.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="风烟俱净，天山共色">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/26d08677.html" class="post-title-link" itemprop="url">php接收post数据</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-27 15:43:37 / 修改时间：17:05:51" itemprop="dateCreated datePublished" datetime="2019-02-27T15:43:37+08:00">2019-02-27</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/programming/" itemprop="url" rel="index"><span itemprop="name">编程</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="php接收post数据">php接收post数据</h3>
+<p>今天开发接口接收合作方post过来的数据</p>
+<p>在本地调试的时候是没有问题的，但是线上调试时接收不到客户数据</p>
+<p>查了下资料</p>
+<p>发现<code>$_POST</code>只能接收<code>Content-Type: application/x-www-form-urlencoded</code>提交的数据</p>
+<p>用户提交的不是<code>Content-Type: application/x-www-form-urlencoded</code>标准数据类型的数据</p>
+<p>所以要用<code>file_get_content("php://input")</code>接收</p>
+<p><code>GLOBLES['HTTP_RAW_POST_DATA']</code>在<strong>php7</strong>中已经<strong>废弃</strong></p>
+<p><strong>注意</strong></p>
+<p><code>php://input</code>不能用于接收<strong>enctype="multipart/form-data"</strong>的数据</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/1d69d5ac.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -389,7 +559,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-26 10:02:59" itemprop="dateModified" datetime="2019-02-26T10:02:59+08:00">2019-02-26</time>
+                <time title="修改时间：2019-02-27 14:19:24" itemprop="dateModified" datetime="2019-02-27T14:19:24+08:00">2019-02-27</time>
               
             
           </span>
@@ -443,28 +613,25 @@
       
         
           
-            <p>
-              hexo解析数学公式
-今天写博客要用到数学公式
-用Typora写好之后执行hexo g &amp;&amp; hexo s 之后发现没有被解析成数学公式，原样输出了
-遂开始百度
-发现大家都说hexo-renderer-pandoc好
-按照指示下载pandoc装上
-卸载hexo默认的markd，安装hexo-renderer-pandoc
-npm uninstall hexo-renderer-marked --savenpm install hexo-renderer-pandoc --save
-然后hexo g报错unknown extension smart
-查完资料发现
-              ...
-            </p>
-          <!--noindex-->
+            <h3 id="hexo解析数学公式">hexo解析数学公式</h3>
+<p>今天写博客要用到数学公式</p>
+<p>用Typora写好之后执行<code>hexo g &amp;&amp; hexo s</code> 之后发现没有被解析成数学公式，原样输出了</p>
+<p>遂开始百度</p>
+<p>发现大家都说<code>hexo-renderer-pandoc</code>好</p>
+<p>按照指示下载<a href="https://github.com/jgm/pandoc/releases/tag/2.6" target="_blank" rel="noopener">pandoc</a>装上</p>
+<p>卸载hexo默认的markd，安装<code>hexo-renderer-pandoc</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install hexo-renderer-pandoc --save</span><br></pre></td></tr></table></figure>
+<p>然后hexo g报错<code>unknown extension smart</code></p>
+<p>查完资料发现是pandoc版本问题（艰难）</p>
+<p>明明下载的是2.6版本符合要求啊</p>
+<p>然后在本地找啊找<code>Everything</code>发现之前装的Anaconda3中有了pandoc，版本1.9不符合要求（坑自己啊）</p>
+<p>更改完之后执行是不报错了，但是解析出来的和想象中的相去甚远。</p>
+<p>仔细阅读了next主题的配置文件</p>
+<p><img src="https://wx3.sinaimg.cn/large/8d2ab563gy1g0jk91043qj20mj031mx8.jpg"></p>
+<p>原来是没有加载js文件</p>
+<p>在<code>.md</code>文件头部加入<code>mathjax: true</code>然后重新生成就ok了</p>
+
           
-            <div class="post-button text-center">
-              <a class="btn" href="/post/1d69d5ac.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
         
       
     </div>
@@ -635,26 +802,44 @@ npm uninstall hexo-renderer-marked --savenpm install hexo-renderer-pandoc --save
       
         
           
-            <p>
-              复杂度分析
-时间复杂度分析
+            <h3 id="复杂度分析">复杂度分析</h3>
+<h4 id="时间复杂度分析">时间复杂度分析</h4>
+<ol type="1">
+<li><p>只关注循环执行次数最多的一段代码</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">($n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    $sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">        $sum += $i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> $sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>只需要关注第4、5行代码，其他的都是常量执行时间，这个方法的时间复杂度是O(n)。</p></li>
+<li><p>加法法则：总复杂度等于量级最大的那段代码的复杂度</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">($n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    $sum_1 = <span class="number">0</span>;</span><br><span class="line">    $sum_2 = <span class="number">0</span>;</span><br><span class="line">    $sum_3 = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= <span class="number">100</span>; $i++)&#123;</span><br><span class="line">        $sum_1 += $i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">    	$sum_2 += $i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">    	<span class="keyword">for</span>($j = <span class="number">1</span>; $j &lt;= $n; $j++)&#123;</span><br><span class="line">	    	$sum_3 += $i * $j;</span><br><span class="line">	    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> $sum_1 + $sum_2 + $sum_3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>第6、7行代码的时间复杂度是常量执行时间，第10、11行代码的时间复杂度是O(n)，第14、15、16行代码的时间复杂度是O(n<sup>2</sup>)，所以这个方法的时间复杂度是O(n<sup>2</sup>)。</p></li>
+<li><p>乘法法则：嵌套代码的复杂度等于嵌套内外代码的复杂度的乘积</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span><span class="params">($n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	$sum = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">    	$sum += f($i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> $sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span><span class="params">($n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    $sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>($i = <span class="number">1</span>; $i &lt;= $n; $i++)&#123;</span><br><span class="line">        $sum += $i;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> $sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果f(<span class="math inline">\(n)的时间复杂度是常量，那sum(\)</span>n)的时间复杂度就是O(n)，但是f(<span class="math inline">\(n)的时间复杂度是O(n)，所以sum(\)</span>n)的时间复杂度是O(n<sup>2</sup>)。</p>
+<h4 id="常见的时间复杂度实例分析">常见的时间复杂度实例分析</h4>
+<p><img src="https://ws4.sinaimg.cn/large/8d2ab563gy1g0gh2zrm2aj20vq0fwjti.jpg"></p></li>
+</ol>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$i = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">while</span>($i &lt;= $n)&#123;</span><br><span class="line">    $i *= <span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2<sup>x</sup> = n =&gt; x=log<sub>2</sub>n；该代码段执行log<sub>2</sub>n次，所以该代码段的时间复杂度是O(logn)</p>
+<p>log<sub>3</sub>n = log<sub>3</sub>2*log<sub>2</sub>n</p>
+<p><img src="http://wx3.sinaimg.cn/large/8d2ab563gy1g0gcrqqbvbj20vq0hsjsq.jpg"></p>
+<h4 id="最好最坏平均均摊时间复杂度">最好、最坏、平均、均摊时间复杂度</h4>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">find</span><span class="params">($array ,$x)</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="keyword">foreach</span> ($array <span class="keyword">as</span> $key =&gt; $value) &#123;</span><br><span class="line">        <span class="keyword">if</span>($value == $x)&#123;</span><br><span class="line">            <span class="keyword">return</span> $key;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>最好情况时间复杂度</strong> 如果x是第一个元素，那就不用遍历剩下的元素了，时间复杂度是O(1)；</p>
+<p><strong>最坏情况时间复杂度</strong>如果x是最后一个元素，就要遍历整个数组，时间复杂度是O(n);</p>
+<p><strong>平均时间复杂度</strong></p>
+<ol type="1">
+<li>如果x在数组0~n-1位置中和不在数组中的概率相等 <span class="math display">\[
+\frac{(1+2+3+···+n+n)}{(n+1)} = \frac{n(n+3)}{2(n+1)}
+\]</span> ​ <strong>平均时间复杂度</strong>是O(n)</li>
+<li><p>如果x在数组中的概率是1/2，在数组中各个元素的概率相等，为1/2n <span class="math display">\[
+\frac{1}{2n}+\frac{2}{2n}+\frac{3}{2n}+···+\frac{n}{2n}+\frac{n}{2} = \frac{(3n+1)}{4}
+\]</span></p>
+<p>这个值叫<strong>加权平均时间复杂度</strong>或者<strong>期望时间复杂度</strong>为O(n)</p></li>
+</ol>
+<p><strong>均摊时间复杂度</strong>在代码执行的所有复杂度情况中绝大部分是低级别的复杂度，个别情况是高级别复杂度且发生具有时序关系时，可以将个别高级别复杂度均摊到低级别复杂度上。基本上均摊结果就等于低级别复杂度。</p>
+<h3 id="空间复杂度">空间复杂度</h3>
+<p>和时间复杂度的分析方法一样</p>
 
-只关注循环执行次数最多的一段代码
-function sum($n)&#123;    $sum = 0;    for($i = 1; $i &lt;= $n; $i++)&#123;        $sum += $i;    &#125;    return $sum;&#125;
-只需要关注第4、5行代码，其他的都是常量执行时间，这个方法的时间复杂度是O(n)。
-加法法则：总复杂度等于量级最大的那段代码的复杂度
-function sum($n)&#123;    $sum_1 = 0;    $sum_2 = 0;    $sum_3 = 0;
-              ...
-            </p>
-          <!--noindex-->
           
-            <div class="post-button text-center">
-              <a class="btn" href="/post/99233f53.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
         
       
     </div>
@@ -825,23 +1010,27 @@ function sum($n)&#123;    $sum_1 = 0;    $sum_2 = 0;    $sum_3 = 0;
       
         
           
-            <p>
-              unison双向同步
+            <h3 id="unison双向同步">unison双向同步</h3>
+<hr>
+<h4 id="安装">安装</h4>
+<p>Linux下通过源码包编译安装Unison时,需要用到Objective Caml compiler <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wget http://caml.inria.fr/pub/distrib/ocaml-4.06/ocaml-4.06.0.tar.gz</span><br><span class="line">tar -zxvf ocaml-4.06.0.tar.gz</span><br><span class="line">cd ocaml-4.06.0</span><br><span class="line">./configure </span><br><span class="line">make world opt</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p>
+<p>编译安装Unison <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/bcpierce00/unison/archive/v2.51.2.tar.gz</span><br><span class="line">tar -zxvf v2.51.2.tar.gz</span><br><span class="line">cd unison-2.51.2/src</span><br><span class="line">make UISTYLE=text</span><br><span class="line">cp ./unison /usr/local/bin</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p>
+<h4 id="设置免密登陆">设置免密登陆</h4>
+<p>2台服务器操作相同 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">useradd -m unison</span><br><span class="line">su - unison </span><br><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure></p>
+<p>将生成的<code>/home/unison/.ssh/id_rsa.pub</code>复制到另一台服务器，然后写入认证文件中 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat  ~/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</span><br></pre></td></tr></table></figure></p>
+<p>如果没有<code>.ssh</code>文件夹 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/.ssh</span><br><span class="line">chmod 700 ~/.ssh</span><br></pre></td></tr></table></figure></p>
+<p>重启<code>ssh</code>服务 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart sshd</span><br></pre></td></tr></table></figure></p>
+<p>测试连接 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh unison@xxx.com -i ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure></p>
+<h4 id="同步配置">同步配置</h4>
+<p>修改<code>~/.unison/default.prf</code>文件 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">root = /unison/test</span><br><span class="line"></span><br><span class="line">root = ssh://unison@10.124.5.215//unison/test</span><br><span class="line"></span><br><span class="line">#force =/unison/test</span><br><span class="line"></span><br><span class="line">servercmd=/usr/local/bin/unison</span><br><span class="line"></span><br><span class="line">#ignore =/tmp/test_1/a</span><br><span class="line"></span><br><span class="line">batch = true</span><br><span class="line"></span><br><span class="line">#repeat = 1</span><br><span class="line"></span><br><span class="line">#retry = 3</span><br><span class="line"></span><br><span class="line">owner = true</span><br><span class="line"></span><br><span class="line">group = true</span><br><span class="line"></span><br><span class="line">perms = -1</span><br><span class="line"></span><br><span class="line">#fastcheck = false</span><br><span class="line"></span><br><span class="line">#rsync = false</span><br><span class="line"></span><br><span class="line">sshargs = -C</span><br><span class="line"></span><br><span class="line">#xferbycopying = true</span><br><span class="line"></span><br><span class="line">confirmbigdel=false</span><br><span class="line"></span><br><span class="line">log = true</span><br><span class="line"></span><br><span class="line">logfile = /home/unison/.unison/unison.log</span><br></pre></td></tr></table></figure></p>
+<h4 id="配置解读">配置解读</h4>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">两个root表示需要同步的文件夹。</span><br><span class="line"></span><br><span class="line">force表示以本地的/unison/test文件夹为标准，将该目录同步到远端,开启后则变成单项同步</span><br><span class="line"></span><br><span class="line">ignore = Path表示忽略/unison/test/a目录，即同步时不同步它。</span><br><span class="line"></span><br><span class="line">batch=true 表示全自动模式，接受并执行默认动作</span><br><span class="line"></span><br><span class="line">log = true表示在终端输出运行信息。</span><br><span class="line"></span><br><span class="line">logfile则指定了同时将输出写入log文件。</span><br><span class="line"></span><br><span class="line">owner = true //保持同步过来的文件属主 </span><br><span class="line"></span><br><span class="line">group = true //保持同步过来的文件组信息 </span><br><span class="line"></span><br><span class="line">perms = -1 //保持同步过来的文件读写权限 </span><br><span class="line"></span><br><span class="line">repeat = 1 //间隔1秒后,开始新的一次同步检查 </span><br><span class="line"></span><br><span class="line">retry = 3 //失败重试 </span><br><span class="line"></span><br><span class="line">sshargs = -C //使用ssh的压缩传输方式 </span><br><span class="line"></span><br><span class="line">fastcheck true 表示同步时仅通过文件的创建时间来比较，如果选项为false，Unison则将比较两地文件的内容。 </span><br><span class="line"></span><br><span class="line">auto //接受缺省的动作，然后等待用户确认是否执行。 </span><br><span class="line"></span><br><span class="line">ignore xxx //增加 xxx 到忽略列表中  ：经测试此参数不能用。</span><br><span class="line"></span><br><span class="line">ignorecase [true|false|default] //是否忽略文件名大小写 </span><br><span class="line"></span><br><span class="line">follow xxx //是否支持对符号连接指向内容的同步 </span><br><span class="line"></span><br><span class="line">xferbycopying = true</span><br><span class="line"></span><br><span class="line">immutable xxx //不变目录，扫描时可以忽略 </span><br><span class="line"></span><br><span class="line">silent //安静模式 </span><br><span class="line"></span><br><span class="line">times=true //同步修改时间 </span><br><span class="line"></span><br><span class="line">path xxx 参数 //只同步 -path 参数指定的子目录以及文件，而非整个目录，-path 可以多次出现。</span><br><span class="line"></span><br><span class="line">confirmbigdel=false//默认值为true，表示当需要同步的两个目录一个为空时，unison将停止，这里设置为false，即便为空unison也不会停止运转</span><br></pre></td></tr></table></figure>
+<h4 id="测试">测试</h4>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">su unison</span><br><span class="line">unison</span><br></pre></td></tr></table></figure>
+<h4 id="加入crontab定时任务">加入crontab定时任务</h4>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">su unison</span><br><span class="line">crontab -e</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">0 5 * * * /usr/local/bin/unison</span><br></pre></td></tr></table></figure>
 
-安装
-Linux下通过源码包编译安装Unison时,需要用到Objective Caml compiler wget http://caml.inria.fr/pub/distrib/ocaml-4.06/ocaml-4.06.0.tar.gztar -zxvf ocaml-4.06.0.tar.gzcd ocaml-4.06.0./configure make world optmake install
-编译安装Unison wget https://github.com/bcpierce00/unison/archive/v2.51.2.tar.gztar 
-              ...
-            </p>
-          <!--noindex-->
           
-            <div class="post-button text-center">
-              <a class="btn" href="/post/5bfd8747.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
         
       
     </div>
@@ -1012,41 +1201,75 @@ Linux下通过源码包编译安装Unison时,需要用到Objective Caml compiler
       
         
           
-            <p>
-              lnmp环境搭建
-安装nginx
+            <h4 id="lnmp环境搭建">lnmp环境搭建</h4>
+<h5 id="安装nginx">安装nginx</h5>
+<ol type="1">
+<li>添加nginx到yum源</li>
+</ol>
+<p><code>rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm</code></p>
+<ol start="2" type="1">
+<li>安装nginx</li>
+</ol>
+<p><code>yum -y install nginx</code></p>
+<ol start="3" type="1">
+<li>启动nginx</li>
+</ol>
+<p><code>systemctl start nginx</code></p>
+<ol start="4" type="1">
+<li>开机启动nginx</li>
+</ol>
+<p><code>systemctl enable nginx</code></p>
+<h5 id="安装mysql">安装mysql</h5>
+<ol type="1">
+<li>下载yum rpm包</li>
+</ol>
+<p><code>wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm</code></p>
+<ol start="2" type="1">
+<li>安装rpm包</li>
+</ol>
+<p><code>rpm -ivh mysql57-community-release-el7-11.noarch.rpm</code></p>
+<ol start="3" type="1">
+<li>安装mysql-server</li>
+</ol>
+<p><code>yum -y install mysql-server</code></p>
+<ol start="4" type="1">
+<li>启动mysql</li>
+</ol>
+<p><code>systemctl start mysqld</code></p>
+<ol start="5" type="1">
+<li>开机启动mysql</li>
+</ol>
+<p><code>systemctl enable mysqld</code></p>
+<ol start="6" type="1">
+<li>查询初始密码</li>
+</ol>
+<p><code>cat /var/log/mysqld.log|grep 'A temporary password'</code></p>
+<ol start="7" type="1">
+<li>初始密码登录</li>
+</ol>
+<p><code>mysql -u root -p</code></p>
+<p>8.修改root用户密码</p>
+<p><code>set password for root@localhost = password('123456');</code></p>
+<h5 id="安装php">安装php</h5>
+<ol type="1">
+<li>添加php到yum源</li>
+</ol>
+<p><code>rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm</code></p>
+<p><code>rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</code></p>
+<ol start="2" type="1">
+<li>安装php及扩展</li>
+</ol>
+<p><code>yum install php71w php71w-fpm php71w-cli php71w-common php71w-devel php71w-gd php71w-pdo php71w-mysql php71w-mbstring php71w-bcmath</code></p>
+<ol start="3" type="1">
+<li>启动php</li>
+</ol>
+<p><code>systemctl start php-fpm</code></p>
+<ol start="4" type="1">
+<li>开机启动php</li>
+</ol>
+<p><code>systemctl enable php-fpm</code></p>
 
-添加nginx到yum源
-
-rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
-
-安装nginx
-
-yum -y install nginx
-
-启动nginx
-
-systemctl start nginx
-
-开机启动nginx
-
-systemctl enable nginx
-安装mysql
-
-下载yum rpm包
-
-wget https://dev.mysql.com/
-              ...
-            </p>
-          <!--noindex-->
           
-            <div class="post-button text-center">
-              <a class="btn" href="/post/110e9b1f.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
         
       
     </div>
@@ -1217,28 +1440,17 @@ wget https://dev.mysql.com/
       
         
           
-            <p>
-              win10专业版激活（半年）
-某一天公司打开电脑右下角有水印提示激活
+            <h3 id="win10专业版激活半年">win10专业版激活（半年）</h3>
+<h4 id="某一天公司打开电脑右下角有水印提示激活">某一天公司打开电脑右下角有水印提示激活</h4>
+<ol type="1">
+<li>以管理员身份运行cmd</li>
+<li>输入<code>slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX</code></li>
+<li>输入<code>slmgr /skms kms.digiboy.ir</code></li>
+<li>输入<code>slmgr /ato</code></li>
+<li>win+r,输入<code>slmgr.vbs -xpr</code></li>
+</ol>
 
-以管理员身份运行cmd
-输入slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-输入slmgr /skms kms.digiboy.ir
-输入slmgr /ato
-win+r,输入slmgr.vbs -xpr
-
-
-              
-            </p>
-          <!--noindex-->
           
-            <div class="post-button text-center">
-              <a class="btn" href="/post/e86019d.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
         
       
     </div>
@@ -1409,30 +1621,20 @@ win+r,输入slmgr.vbs -xpr
       
         
           
-            <p>
-              记一次苹果内购刷单bug修复
-一
-某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug
-二
-心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现内购订单数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:
+            <h3 id="记一次苹果内购刷单bug修复">记一次苹果内购刷单bug修复</h3>
+<h4 id="一">一</h4>
+<p>某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug</p>
+<h4 id="二">二</h4>
+<p>心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现<code>内购订单</code>数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:</p>
+<ol type="1">
+<li>家里有矿的土豪们闲的发慌，充钱玩(心里偏向于这条原因)</li>
+<li>网站被人植入了后门，直接向数据库中写订单数据</li>
+<li>苹果内购支付验证有漏洞</li>
+</ol>
+<h4 id="三">三</h4>
+<p>开始排查原因 1. 查苹果App Store的销售记录，只能查看前一天的数据，先暂停一下，第二天接着查 2. 联想到前几天的云盾报告<code>可疑的WebShell通信行为</code>，凭直觉认为这个嫌疑很大，但是花费大 量时间也没在服务器中找到问题，瞬间觉得自己应该去买几本白帽子的书学习一下，暂时放 弃。换个思路，发现不只是数据库中有订单信息，相应的日志也一应俱全，所以客户应该是 走的正常支付流程，只是付款的时候出现了纰漏。定位到第3点 3. 上网一查，发现吐槽内购的有帖子很多，第3点的嫌疑又增大了一点，一看代码发现前辈们把 苹果服务器返回的<code>status==0</code> 就当成了支付成功，而没有验证<code>product_id</code> 和 <code>transaction_id</code>，导致越狱用户能够伪造<code>receipt_data</code> ，伪造的receipt_data 苹果校 验也返回支付成功。从日志文件中发现刷单用户的receipt_data 都是同一个数据，问题原 因基本锁定在第三点了。</p>
 
-家里有矿的土豪们闲的发慌，充钱玩(心里偏向于这条原因)
-网站被人植入了后门，直接向数据库中写订单数据
-苹果内购支付验证有漏洞
-
-三
-开始排查原因 1. 查苹果App Store的销售记录，只能查看前一天的数据，先暂停一下，第二天接
-              ...
-            </p>
-          <!--noindex-->
           
-            <div class="post-button text-center">
-              <a class="btn" href="/post/431172b6.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
         
       
     </div>
@@ -1517,7 +1719,7 @@ win+r,输入slmgr.vbs -xpr
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1628,7 +1830,7 @@ win+r,输入slmgr.vbs -xpr
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-snowflake-o"></i>
   </span>
@@ -1694,6 +1896,14 @@ win+r,输入slmgr.vbs -xpr
 
 
 
+
+  
+    
+    
+      
+    
+  
+  <script color="120,120,120" opacity="1" zindex="-1" count="199" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js"></script>
 
 
 
@@ -1767,6 +1977,8 @@ win+r,输入slmgr.vbs -xpr
       
     
       
+    
+      
         
       
     
@@ -1808,7 +2020,7 @@ win+r,输入slmgr.vbs -xpr
       }
   });
 </script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 <style>
 .MathJax_Display {
