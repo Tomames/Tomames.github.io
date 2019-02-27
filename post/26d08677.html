@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="风烟俱净，天山共色">
 <meta property="og:description" content="php接收post数据 今天开发接口接收合作方post过来的数据 在本地调试的时候是没有问题的，但是线上调试时接收不到客户数据 查了下资料 发现$_POST只能接收Content-Type: application/x-www-form-urlencoded提交的数据 用户提交的不是Content-Type: application/x-www-form-urlencoded标准数据类型">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-27T09:05:51.129Z">
+<meta property="og:updated_time" content="2019-02-27T09:10:48.510Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="php接收post数据">
 <meta name="twitter:description" content="php接收post数据 今天开发接口接收合作方post过来的数据 在本地调试的时候是没有问题的，但是线上调试时接收不到客户数据 查了下资料 发现$_POST只能接收Content-Type: application/x-www-form-urlencoded提交的数据 用户提交的不是Content-Type: application/x-www-form-urlencoded标准数据类型">
@@ -370,7 +370,7 @@
                 
               
 
-              <time title="创建时间：2019-02-27 15:43:37 / 修改时间：17:05:51" itemprop="dateCreated datePublished" datetime="2019-02-27T15:43:37+08:00">2019-02-27</time>
+              <time title="创建时间：2019-02-27 15:43:37 / 修改时间：17:10:48" itemprop="dateCreated datePublished" datetime="2019-02-27T15:43:37+08:00">2019-02-27</time>
             
 
             
@@ -434,7 +434,7 @@
 <p>发现<code>$_POST</code>只能接收<code>Content-Type: application/x-www-form-urlencoded</code>提交的数据</p>
 <p>用户提交的不是<code>Content-Type: application/x-www-form-urlencoded</code>标准数据类型的数据</p>
 <p>所以要用<code>file_get_content("php://input")</code>接收</p>
-<p><code>GLOBLES['HTTP_RAW_POST_DATA']</code>在<strong>php7</strong>中已经<strong>废弃</strong></p>
+<p><code>$GLOBLES['HTTP_RAW_POST_DATA']</code>在<strong>php7</strong>中已经<strong>废弃</strong></p>
 <p><strong>注意</strong></p>
 <p><code>php://input</code>不能用于接收<strong>enctype="multipart/form-data"</strong>的数据</p>
 
