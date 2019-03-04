@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="风烟俱净，天山共色">
 <meta property="og:description" content="网站自动备份 新建backup文件夹 1cd / &amp;amp;&amp;amp; mkdir backup 新建backup.sh脚本文件 1vim backup.sh 1234567891011121314151617181920212223#!/bin/bashday=`date +%y%m%d`if [ -d &quot;/backup/$day&quot; ]; then  rm -rf /backup/$d">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-04T10:25:14.306Z">
+<meta property="og:updated_time" content="2019-03-04T10:28:55.695Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="网站自动备份">
 <meta name="twitter:description" content="网站自动备份 新建backup文件夹 1cd / &amp;amp;&amp;amp; mkdir backup 新建backup.sh脚本文件 1vim backup.sh 1234567891011121314151617181920212223#!/bin/bashday=`date +%y%m%d`if [ -d &quot;/backup/$day&quot; ]; then  rm -rf /backup/$d">
@@ -370,7 +370,7 @@
                 
               
 
-              <time title="创建时间：2019-03-04 18:13:40 / 修改时间：18:25:14" itemprop="dateCreated datePublished" datetime="2019-03-04T18:13:40+08:00">2019-03-04</time>
+              <time title="创建时间：2019-03-04 18:13:40 / 修改时间：18:28:55" itemprop="dateCreated datePublished" datetime="2019-03-04T18:13:40+08:00">2019-03-04</time>
             
 
             
@@ -440,7 +440,7 @@
 <h4 id="新增crontab任务">新增crontab任务</h4>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 5 * * * /backup/backup.sh &gt;&gt; /backup/backup.log</span><br></pre></td></tr></table></figure>
-<p>每天凌晨5点钟自动备份网站数据和文件</p>
+<p>每天凌晨5点钟自动备份网站数据和文件，并保留7天</p>
 
       
     </div>
