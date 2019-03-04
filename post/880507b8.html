@@ -96,31 +96,25 @@
 
 
 
-  <meta name="description" content="mysql排序问题记录 今天看到一个面试题 一张表中有id 1-10的10条数据，要根据指定的顺序查询出结果集，比如(5,4,8,7,9,2..) 才发现原来mysql除了order by `column` desc|asc 还有 order by field(`column`, value1, value2, value3....)这种用法 1SELECT * FROM `works`">
-<meta name="keywords" content="mysql,order by">
+  <meta name="description" content="网站自动备份 新建backup文件夹 1cd / &amp;amp;&amp;amp; mkdir backup 新建backup.sh脚本文件 1vim backup.sh 1234567891011121314151617181920212223#!/bin/bashday=`date +%y%m%d`if [ -d &quot;/backup/$day&quot; ]; then  rm -rf /backup/$d">
+<meta name="keywords" content="mysql,bash">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql排序问题记录">
-<meta property="og:url" content="https://tomames.github.io/post/7cd11435.html">
+<meta property="og:title" content="网站自动备份">
+<meta property="og:url" content="https://tomames.github.io/post/880507b8.html">
 <meta property="og:site_name" content="风烟俱净，天山共色">
-<meta property="og:description" content="mysql排序问题记录 今天看到一个面试题 一张表中有id 1-10的10条数据，要根据指定的顺序查询出结果集，比如(5,4,8,7,9,2..) 才发现原来mysql除了order by `column` desc|asc 还有 order by field(`column`, value1, value2, value3....)这种用法 1SELECT * FROM `works`">
+<meta property="og:description" content="网站自动备份 新建backup文件夹 1cd / &amp;amp;&amp;amp; mkdir backup 新建backup.sh脚本文件 1vim backup.sh 1234567891011121314151617181920212223#!/bin/bashday=`date +%y%m%d`if [ -d &quot;/backup/$day&quot; ]; then  rm -rf /backup/$d">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://wx2.sinaimg.cn/large/8d2ab563gy1g0m4tqegk0j205z07kq2w.jpg">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/8d2ab563ly1g0m50x7p13j205s07kweg.jpg">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/8d2ab563gy1g0m5chbs5zj205s07hweg.jpg">
-<meta property="og:image" content="https://ws4.sinaimg.cn/large/8d2ab563gy1g0m5chbs5zj205s07hweg.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/8d2ab563ly1g0m62wttadj205s07emx4.jpg">
-<meta property="og:updated_time" content="2019-02-28T07:49:40.155Z">
+<meta property="og:updated_time" content="2019-03-04T10:25:14.306Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mysql排序问题记录">
-<meta name="twitter:description" content="mysql排序问题记录 今天看到一个面试题 一张表中有id 1-10的10条数据，要根据指定的顺序查询出结果集，比如(5,4,8,7,9,2..) 才发现原来mysql除了order by `column` desc|asc 还有 order by field(`column`, value1, value2, value3....)这种用法 1SELECT * FROM `works`">
-<meta name="twitter:image" content="https://wx2.sinaimg.cn/large/8d2ab563gy1g0m4tqegk0j205z07kq2w.jpg">
+<meta name="twitter:title" content="网站自动备份">
+<meta name="twitter:description" content="网站自动备份 新建backup文件夹 1cd / &amp;amp;&amp;amp; mkdir backup 新建backup.sh脚本文件 1vim backup.sh 1234567891011121314151617181920212223#!/bin/bashday=`date +%y%m%d`if [ -d &quot;/backup/$day&quot; ]; then  rm -rf /backup/$d">
 
 
 
 
 
 
-  <link rel="canonical" href="https://tomames.github.io/post/7cd11435.html">
+  <link rel="canonical" href="https://tomames.github.io/post/880507b8.html">
 
 
 
@@ -130,7 +124,7 @@
   };
 </script>
 
-  <title>mysql排序问题记录 | 风烟俱净，天山共色</title>
+  <title>网站自动备份 | 风烟俱净，天山共色</title>
   
 
 
@@ -333,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/7cd11435.html">
+    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/880507b8.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tomames">
@@ -350,7 +344,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">mysql排序问题记录
+          <h2 class="post-title" itemprop="name headline">网站自动备份
 
               
             
@@ -376,7 +370,7 @@
                 
               
 
-              <time title="创建时间：2019-02-28 14:31:00 / 修改时间：15:49:40" itemprop="dateCreated datePublished" datetime="2019-02-28T14:31:00+08:00">2019-02-28</time>
+              <time title="创建时间：2019-03-04 18:13:40 / 修改时间：18:25:14" itemprop="dateCreated datePublished" datetime="2019-03-04T18:13:40+08:00">2019-03-04</time>
             
 
             
@@ -433,45 +427,20 @@
       
 
       
-        <h3 id="mysql排序问题记录">mysql排序问题记录</h3>
-<p>今天看到一个面试题</p>
-<p><code>一张表中有id 1-10的10条数据，要根据指定的顺序查询出结果集，比如(5,4,8,7,9,2..)</code></p>
-<p>才发现原来mysql除了order by `column` desc|asc 还有 order by field(`column`, value1, value2, value3....)这种用法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM `works` ORDER BY FIELD(`id`, 5,4,8,7,9,2);</span><br></pre></td></tr></table></figure>
-<p>查询结果为</p>
-<p><img src="https://wx2.sinaimg.cn/large/8d2ab563gy1g0m4tqegk0j205z07kq2w.jpg"></p>
-<p>FIELD()函数是将参数1的字段对后续参数进行比较，并返回1、2、3等等，如果遇到null或者没有在结果集上存在的数据，则返回0，然后根据升序进行排序。</p>
-<p>因为其他id没在列出的结果集中，所以返回0，如果没有规定排序顺序的话，默认asc，所以排在前面</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM `works` ORDER BY FIELD(`id`, 5,4,8,7,9,2) DESC, id ASC;</span><br></pre></td></tr></table></figure>
-<p>查询结果为</p>
-<p><img src="https://ws4.sinaimg.cn/large/8d2ab563ly1g0m50x7p13j205s07kweg.jpg"></p>
-<ol type="1">
-<li><p>如果想让指定id的数据排在前面，又不愿意先对指定顺序倒序处理再查询，我的想法是用<strong>union</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(SELECT * FROM `works` WHERE `id` IN (5,4,8,7,9,2) ORDER BY field(`id`, 5,4,8,7,9,2))</span><br><span class="line">UNION </span><br><span class="line">(SELECT * FROM `works` WHERE `id` NOT IN (5,4,8,7,9,2))</span><br></pre></td></tr></table></figure>
-<p>查询结果</p>
-<p><img src="https://ws4.sinaimg.cn/large/8d2ab563gy1g0m5chbs5zj205s07hweg.jpg"></p>
-<p>这和预想的不一样</p></li>
-<li><p>查完资料后说要用如下语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM (SELECT * FROM `works` WHERE `id` IN (5,4,8,7,9,2) ORDER BY field(`id`, 5,4,8,7,9,2)) t1 </span><br><span class="line">UNION </span><br><span class="line">SELECT * FROM (SELECT * FROM `works` WHERE `id` NOT IN (5,4,8,7,9,2)) t2;</span><br></pre></td></tr></table></figure>
-<p>结果还是一样</p>
-<p><img src="https://ws4.sinaimg.cn/large/8d2ab563gy1g0m5chbs5zj205s07hweg.jpg"></p></li>
-<li><p>查资料后发现没有<strong>limit</strong>导致order by被优化器干掉了</p>
-<p>变成了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(SELECT * FROM `works` WHERE `id` IN (5,4,8,7,9,2))</span><br><span class="line">UNION </span><br><span class="line">(SELECT * FROM `works` WHERE `id` NOT IN (5,4,8,7,9,2))</span><br></pre></td></tr></table></figure>
-<p>1和2，都被优化成了3</p>
-<p>-_-||</p></li>
-<li><p>终极解决办法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM (SELECT * FROM `works` WHERE `id` IN (5,4,8,7,9,2) ORDER BY field(`id`, 5,4,8,7,9,2) LIMIT 100) t1 </span><br><span class="line">UNION </span><br><span class="line">SELECT * FROM (SELECT * FROM `works` WHERE `id` NOT IN (5,4,8,7,9,2) LIMIT 100) t2;</span><br></pre></td></tr></table></figure>
-<p>查询结果</p>
-<p><img src="https://ws1.sinaimg.cn/large/8d2ab563ly1g0m62wttadj205s07emx4.jpg"></p></li>
-</ol>
-<p>mysql版本<strong>5.7.20-log</strong></p>
-<hr>
-<p>UNION在进行表链接后会筛选掉重复的记录，所以在表链接后会对所产生的结果集进行排序运算，删除重复的记录再返回结果。</p>
-<p>UNION ALL只是简单的将两个结果合并后就返回。这样，如果返回的两个结果集中有重复的数据，那么返回的结果集就会包含重复的数据了。</p>
-<p>从效率上说，UNION ALL 要比UNION快很多</p>
-<hr>
-<p>--摘抄自 别人的博客</p>
+        <h3 id="网站自动备份">网站自动备份</h3>
+<h4 id="新建backup文件夹">新建backup文件夹</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> / &amp;&amp; mkdir backup</span><br></pre></td></tr></table></figure>
+<h4 id="新建backup.sh脚本文件">新建backup.sh脚本文件</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim backup.sh</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">day=`date +%y%m%d`</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ -d <span class="string">"/backup/<span class="variable">$day</span>"</span> ]; <span class="keyword">then</span></span><br><span class="line">  rm -rf /backup/<span class="variable">$day</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">mkdir /backup/<span class="variable">$day</span></span><br><span class="line"></span><br><span class="line">old_day=`date +%y%m%d -d<span class="string">"-7 days"</span>`</span><br><span class="line"></span><br><span class="line">mysqldump --defaults-extra-file=/etc/my.cnf --databases database &gt; /backup/<span class="variable">$day</span>/database.sql</span><br><span class="line"></span><br><span class="line">dist=<span class="string">"/www"</span></span><br><span class="line"></span><br><span class="line">tar -C <span class="variable">$dist</span> -zcf /backup/<span class="variable">$day</span>/website.tar.gz website/</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ -d <span class="string">"/backup/<span class="variable">$old_day</span>"</span> ]; <span class="keyword">then</span></span><br><span class="line">  rm -rf /backup/<span class="variable">$old_day</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$day</span><span class="string">" backup success!"</span></span><br></pre></td></tr></table></figure>
+<h4 id="修改mysql配置文件">修改mysql配置文件</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/my.cnf</span><br></pre></td></tr></table></figure>
+<h5 id="在client中添加配置">在[client]中添加配置</h5>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[client]</span><br><span class="line">host=host</span><br><span class="line">user=user</span><br><span class="line">password=<span class="string">'password'</span></span><br></pre></td></tr></table></figure>
+<h4 id="新增crontab任务">新增crontab任务</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 5 * * * /backup/backup.sh &gt;&gt; /backup/backup.log</span><br></pre></td></tr></table></figure>
+<p>每天凌晨5点钟自动备份网站数据和文件</p>
 
       
     </div>
@@ -497,7 +466,7 @@
           
             <a href="/tags/mysql/" rel="tag"><i class="fa fa-fw fa-tags"></i> mysql</a>
           
-            <a href="/tags/order-by/" rel="tag"><i class="fa fa-fw fa-tags"></i> order by</a>
+            <a href="/tags/bash/" rel="tag"><i class="fa fa-fw fa-tags"></i> bash</a>
           
         </div>
       
@@ -510,8 +479,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/26d08677.html" rel="next" title="php接收post数据">
-                <i class="fa fa-chevron-left"></i> php接收post数据
+              <a href="/post/7cd11435.html" rel="next" title="mysql排序问题记录">
+                <i class="fa fa-chevron-left"></i> mysql排序问题记录
               </a>
             
           </div>
@@ -519,10 +488,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/post/880507b8.html" rel="prev" title="网站自动备份">
-                网站自动备份 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -708,7 +673,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql排序问题记录"><span class="nav-number">1.</span> <span class="nav-text">mysql排序问题记录</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#网站自动备份"><span class="nav-number">1.</span> <span class="nav-text">网站自动备份</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建backup文件夹"><span class="nav-number">1.1.</span> <span class="nav-text">新建backup文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建backup.sh脚本文件"><span class="nav-number">1.2.</span> <span class="nav-text">新建backup.sh脚本文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改mysql配置文件"><span class="nav-number">1.3.</span> <span class="nav-text">修改mysql配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#在client中添加配置"><span class="nav-number">1.3.1.</span> <span class="nav-text">在[client]中添加配置</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新增crontab任务"><span class="nav-number">1.4.</span> <span class="nav-text">新增crontab任务</span></a></li></ol></li></ol></div>
             
 
           </div>
