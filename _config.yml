@@ -61,6 +61,7 @@ category_map:
   其他: other
 tag_map:
   算法: algorithm
+  随笔: essay
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
