@@ -97,27 +97,42 @@
 
 
 
-  <meta name="description" content="记一次苹果内购刷单bug修复 一 某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug 二 心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现内购订单数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:  家里有矿的土豪们闲的发慌，充钱玩(心里偏">
-<meta name="keywords" content="bug,apple store">
+  <meta name="description" content="我为什么要养一只猫？ 2018年12月16日，天气晴朗，下午2点左右。我刚洗完澡穿着T恤，楼道上回响着小猫奶声奶气的叫声，是杨雪带着她的小猫来到我家了，还带了一些猫粮和猫咪的感冒药，小猫即将成为我的小猫。把它从笼子里抓出来的时候，没抓好，小猫顺着T恤往上爬，尖锐的爪子直接扎进了皮肤里，疼得我龇牙咧嘴，真是一个残忍的见面礼。在杨雪的帮助下才把它抓下来，交代了一些注意事项之后房间里就只剩下我们俩了。">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="记一次苹果内购刷单bug修复">
-<meta property="og:url" content="https://tomames.github.io/post/431172b6.html">
+<meta property="og:title" content="我为什么要养一只猫？">
+<meta property="og:url" content="https://tomames.github.io/post/554a890d.html">
 <meta property="og:site_name" content="风烟俱净，天山共色">
-<meta property="og:description" content="记一次苹果内购刷单bug修复 一 某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug 二 心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现内购订单数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:  家里有矿的土豪们闲的发慌，充钱玩(心里偏">
+<meta property="og:description" content="我为什么要养一只猫？ 2018年12月16日，天气晴朗，下午2点左右。我刚洗完澡穿着T恤，楼道上回响着小猫奶声奶气的叫声，是杨雪带着她的小猫来到我家了，还带了一些猫粮和猫咪的感冒药，小猫即将成为我的小猫。把它从笼子里抓出来的时候，没抓好，小猫顺着T恤往上爬，尖锐的爪子直接扎进了皮肤里，疼得我龇牙咧嘴，真是一个残忍的见面礼。在杨雪的帮助下才把它抓下来，交代了一些注意事项之后房间里就只剩下我们俩了。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://wx4.sinaimg.cn/large/8d2ab563ly1g0t1rjvr9nj215v0mv78u.jpg">
-<meta property="og:updated_time" content="2019-03-06T06:16:22.507Z">
+<meta property="og:image" content="https://wx2.sinaimg.cn/large/8d2ab563gy1g2p8m28hcdj20u014041o.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/8d2ab563gy1g2p95gdi2xj20u0140dhp.jpg">
+<meta property="og:image" content="https://wx3.sinaimg.cn/large/8d2ab563gy1g2p969t7bmj20u0140q48.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/8d2ab563gy1g2p97zwwbej20u014040d.jpg">
+<meta property="og:image" content="https://wx2.sinaimg.cn/large/8d2ab563gy1g2p98hvbkyj20u0140wfq.jpg">
+<meta property="og:image" content="https://wx1.sinaimg.cn/large/8d2ab563gy1g2p9nrqu6gj20u0140mzx.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/8d2ab563gy1g2p9zka9waj20u0140t9n.jpg">
+<meta property="og:image" content="https://wx1.sinaimg.cn/large/8d2ab563gy1g2p9h16x66j21400u075c.jpg">
+<meta property="og:image" content="https://wx1.sinaimg.cn/large/8d2ab563gy1g2p9t00dzbj21400u0jth.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/8d2ab563gy1g2p9y028mgj20u0140wgs.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/8d2ab563gy1g2p9ywp8vsj20u01400ur.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/8d2ab563gy1g2pa229ifaj20u0140jt1.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/8d2ab563gy1g2pa3w9rbdj20u01hc44a.jpg">
+<meta property="og:image" content="https://wx1.sinaimg.cn/large/8d2ab563gy1g2pa4mck3rj20u0140n2g.jpg">
+<meta property="og:image" content="https://wx2.sinaimg.cn/large/8d2ab563gy1g2pa6r2xx9j20u0140wf2.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/8d2ab563gy1g2pa8z1fsyj21400u0ab1.jpg">
+<meta property="og:updated_time" content="2019-06-04T05:50:28.986Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="记一次苹果内购刷单bug修复">
-<meta name="twitter:description" content="记一次苹果内购刷单bug修复 一 某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug 二 心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现内购订单数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:  家里有矿的土豪们闲的发慌，充钱玩(心里偏">
-<meta name="twitter:image" content="https://wx4.sinaimg.cn/large/8d2ab563ly1g0t1rjvr9nj215v0mv78u.jpg">
+<meta name="twitter:title" content="我为什么要养一只猫？">
+<meta name="twitter:description" content="我为什么要养一只猫？ 2018年12月16日，天气晴朗，下午2点左右。我刚洗完澡穿着T恤，楼道上回响着小猫奶声奶气的叫声，是杨雪带着她的小猫来到我家了，还带了一些猫粮和猫咪的感冒药，小猫即将成为我的小猫。把它从笼子里抓出来的时候，没抓好，小猫顺着T恤往上爬，尖锐的爪子直接扎进了皮肤里，疼得我龇牙咧嘴，真是一个残忍的见面礼。在杨雪的帮助下才把它抓下来，交代了一些注意事项之后房间里就只剩下我们俩了。">
+<meta name="twitter:image" content="https://wx2.sinaimg.cn/large/8d2ab563gy1g2p8m28hcdj20u014041o.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="https://tomames.github.io/post/431172b6.html">
+  <link rel="canonical" href="https://tomames.github.io/post/554a890d.html">
 
 
 
@@ -127,7 +142,7 @@
   };
 </script>
 
-  <title>记一次苹果内购刷单bug修复 | 风烟俱净，天山共色</title>
+  <title>我为什么要养一只猫？ | 风烟俱净，天山共色</title>
   
 
 
@@ -330,7 +345,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/431172b6.html">
+    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/554a890d.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tomames">
@@ -347,7 +362,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">记一次苹果内购刷单bug修复
+          <h2 class="post-title" itemprop="name headline">我为什么要养一只猫？
 
               
             
@@ -373,7 +388,7 @@
                 
               
 
-              <time title="创建时间：2018-10-13 16:18:20" itemprop="dateCreated datePublished" datetime="2018-10-13T16:18:20+08:00">2018-10-13</time>
+              <time title="创建时间：2019-05-04 13:05:56" itemprop="dateCreated datePublished" datetime="2019-05-04T13:05:56+08:00">2019-05-04</time>
             
 
             
@@ -390,7 +405,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-06 14:16:22" itemprop="dateModified" datetime="2019-03-06T14:16:22+08:00">2019-03-06</time>
+                <time title="修改时间：2019-06-04 13:50:28" itemprop="dateModified" datetime="2019-06-04T13:50:28+08:00">2019-06-04</time>
               
             
           </span>
@@ -407,7 +422,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/programming/" itemprop="url" rel="index"><span itemprop="name">编程</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">生活</span></a></span>
 
                 
                 
@@ -442,24 +457,65 @@
       
 
       
-        <h3 id="记一次苹果内购刷单bug修复">记一次苹果内购刷单bug修复</h3>
-<h4 id="一">一</h4>
-<p>某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug</p>
-<h4 id="二">二</h4>
-<p>心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现<code>内购订单</code>数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:</p>
-<ol type="1">
-<li>家里有矿的土豪们闲的发慌，充钱玩(心里偏向于这条原因)</li>
-<li>网站被人植入了后门，直接向数据库中写订单数据</li>
-<li>苹果内购支付验证有漏洞</li>
-</ol>
-<h4 id="三">三</h4>
-<p>开始排查原因 1. 查苹果App Store的销售记录，只能查看前一天的数据，先暂停一下，第二天接着查 2. 联想到前几天的云盾报告<code>可疑的WebShell通信行为</code>，凭直觉认为这个嫌疑很大，但是花费大 量时间也没在服务器中找到问题，瞬间觉得自己应该去买几本白帽子的书学习一下，暂时放 弃。换个思路，发现不只是数据库中有订单信息，相应的日志也一应俱全，所以客户应该是 走的正常支付流程，只是付款的时候出现了纰漏。定位到第3点 3. 上网一查，发现吐槽内购的有帖子很多，第3点的嫌疑又增大了一点，一看代码发现前辈们把 苹果服务器返回的<code>status==0</code> 就当成了支付成功，而没有验证<code>product_id</code> 和 <code>transaction_id</code>，导致越狱用户能够伪造<code>receipt_data</code> ，伪造的receipt_data 苹果校 验也返回支付成功。从日志文件中发现刷单用户的receipt_data 都是同一个数据，问题原 因基本锁定在第三点了。</p>
-<h4 id="四">四</h4>
-<p>内购订单验证</p>
-<p>url : https://buy.itunes.apple.com/verifyReceipt</p>
-<p>method : post</p>
-<p>params : receipt-data</p>
-<p><img src="https://wx4.sinaimg.cn/large/8d2ab563ly1g0t1rjvr9nj215v0mv78u.jpg"></p>
+        <h3 id="我为什么要养一只猫">我为什么要养一只猫？</h3>
+<p>2018年12月16日，天气晴朗，下午2点左右。我刚洗完澡穿着T恤，楼道上回响着小猫奶声奶气的叫声，是杨雪带着她的小猫来到我家了，还带了一些猫粮和猫咪的感冒药，小猫即将成为我的小猫。把它从笼子里抓出来的时候，没抓好，小猫顺着T恤往上爬，尖锐的爪子直接扎进了皮肤里，疼得我龇牙咧嘴，真是一个残忍的见面礼。在杨雪的帮助下才把它抓下来，交代了一些注意事项之后房间里就只剩下我们俩了。相顾无言，后来它就找了个角落躲起来了。</p>
+<figure>
+<img src="https://wx2.sinaimg.cn/large/8d2ab563gy1g2p8m28hcdj20u014041o.jpg" alt="躲猫猫"><figcaption>躲猫猫</figcaption>
+</figure>
+<p>作为一个新晋猫奴，我对猫的印象还停留在小时候。我小时候跟爷爷奶奶长大，那时候奶奶养了一只狸花猫，好帅的，待人和善，给摸给抱还给亲，还能上山抓兔子，抓了2只兔子，真是又萌又凶。只是后来啊，它可能在外面吃了不干净的食物，没有回家，它的孩子们和人又没那么亲，再后来它的孙子们都不见了，大概是成了野猫吧。</p>
+<p>还好，我这只小猫后来就没那么怕生了，会吃手上的猫粮，吃完还舔一舔，舔完一口咬出血。熟悉了一两天之后就会和我玩耍，会看电视，会爬人了（这真不是一个好习惯）。</p>
+<figure>
+<img src="https://ws3.sinaimg.cn/large/8d2ab563gy1g2p95gdi2xj20u0140dhp.jpg" alt="玩耍"><figcaption>玩耍</figcaption>
+</figure>
+<figure>
+<img src="https://wx3.sinaimg.cn/large/8d2ab563gy1g2p969t7bmj20u0140q48.jpg" alt="踩键盘"><figcaption>踩键盘</figcaption>
+</figure>
+<figure>
+<img src="https://ws1.sinaimg.cn/large/8d2ab563gy1g2p97zwwbej20u014040d.jpg" alt="歪头杀"><figcaption>歪头杀</figcaption>
+</figure>
+<p>好景不长，小猫感冒了，每天泪汪汪的，还鼻塞。</p>
+<figure>
+<img src="https://wx2.sinaimg.cn/large/8d2ab563gy1g2p98hvbkyj20u0140wfq.jpg" alt="感冒了"><figcaption>感冒了</figcaption>
+</figure>
+<p>从此我每天早晚都要给它喂药，各种辛酸：得把药丸碾碎倒入针筒冲水；还得用毛巾把它包好，防止喂药的时候乱窜，把人抓伤。恨不得自己能多长几只手，经过艰苦卓绝的一周之后感冒终于好了。一切似乎都已步上正轨，哦不，它还没学会用猫砂，可怜的铲屎官每天都要给它捡屎吸尿，可坏了，总是找角落排泄，拖把都伸不进去，只能用毛巾擦。又半周之后，终于会用猫砂了。老怀大慰</p>
+<figure>
+<img src="https://wx1.sinaimg.cn/large/8d2ab563gy1g2p9nrqu6gj20u0140mzx.jpg" alt="第一次用猫砂"><figcaption>第一次用猫砂</figcaption>
+</figure>
+<p>之后一切步入正轨，“皮”的本性暴露无遗，码代码的时候来抓手，去踩键盘，烧菜的时候要爬到肩膀上，刷牙的时候要跳到背上，看书的时候要睡到书上，写字的时候不是咬笔杆就是在纸上闲逛，健身的时候要霸占一块地盘，听音乐抖腿也有风险，跑过来就是一爪，连睡觉也要睡到大腿上</p>
+<figure>
+<img src="https://ws1.sinaimg.cn/large/8d2ab563gy1g2p9zka9waj20u0140t9n.jpg" alt="皮1"><figcaption>皮1</figcaption>
+</figure>
+<figure>
+<img src="https://wx1.sinaimg.cn/large/8d2ab563gy1g2p9h16x66j21400u075c.jpg" alt="皮2"><figcaption>皮2</figcaption>
+</figure>
+<figure>
+<img src="https://wx1.sinaimg.cn/large/8d2ab563gy1g2p9t00dzbj21400u0jth.jpg" alt="皮3"><figcaption>皮3</figcaption>
+</figure>
+<figure>
+<img src="https://ws4.sinaimg.cn/large/8d2ab563gy1g2p9y028mgj20u0140wgs.jpg" alt="皮4"><figcaption>皮4</figcaption>
+</figure>
+<figure>
+<img src="https://ws2.sinaimg.cn/large/8d2ab563gy1g2p9ywp8vsj20u01400ur.jpg" alt="皮5"><figcaption>皮5</figcaption>
+</figure>
+<figure>
+<img src="https://ws1.sinaimg.cn/large/8d2ab563gy1g2pa229ifaj20u0140jt1.jpg" alt="皮6"><figcaption>皮6</figcaption>
+</figure>
+<p>在家猛如虎，外出怂成二哈，比二哈还不如，瑟瑟发抖，抱着大腿不敢动弹</p>
+<figure>
+<img src="https://ws2.sinaimg.cn/large/8d2ab563gy1g2pa3w9rbdj20u01hc44a.jpg" alt="怂1"><figcaption>怂1</figcaption>
+</figure>
+<figure>
+<img src="https://wx1.sinaimg.cn/large/8d2ab563gy1g2pa4mck3rj20u0140n2g.jpg" alt="怂2"><figcaption>怂2</figcaption>
+</figure>
+<p>最近天热了，家里出现了一只蚊子，天天妄想着能抓到蚊子</p>
+<figure>
+<img src="https://wx2.sinaimg.cn/large/8d2ab563gy1g2pa6r2xx9j20u0140wf2.jpg" alt="那个黑点是蚊子"><figcaption>那个黑点是蚊子</figcaption>
+</figure>
+<p>每天早上，我一有动静就开始“喵喵喵”，不理它就到胸口踩奶，踩累了就趴下打呼，还啃下巴</p>
+<figure>
+<img src="https://ws3.sinaimg.cn/large/8d2ab563gy1g2pa8z1fsyj21400u0ab1.jpg" alt="爪子好暖"><figcaption>爪子好暖</figcaption>
+</figure>
+<p>那么我为什么要养一只猫呢？当时我应该从杨雪那里要2只猫的，这样我上班的时候它们就有伴了。是的我应该养2只，失策了！</p>
 
       
     </div>
@@ -483,9 +539,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/bug/" rel="tag"><i class="fa fa-fw fa-tags"></i> bug</a>
-          
-            <a href="/tags/apple-store/" rel="tag"><i class="fa fa-fw fa-tags"></i> apple store</a>
+            <a href="/tags/essay/" rel="tag"><i class="fa fa-fw fa-tags"></i> 随笔</a>
           
         </div>
       
@@ -498,14 +552,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/post/e3d56218.html" rel="next" title="2019.04.14">
+                <i class="fa fa-chevron-left"></i> 2019.04.14
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/e86019d.html" rel="prev" title="win10专业版激活">
-                win10专业版激活 <i class="fa fa-chevron-right"></i>
+              <a href="/post/45109102.html" rel="prev" title="php执行shell">
+                php执行shell <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -700,7 +758,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#记一次苹果内购刷单bug修复"><span class="nav-number">1.</span> <span class="nav-text">记一次苹果内购刷单bug修复</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一"><span class="nav-number">1.1.</span> <span class="nav-text">一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二"><span class="nav-number">1.2.</span> <span class="nav-text">二</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三"><span class="nav-number">1.3.</span> <span class="nav-text">三</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四"><span class="nav-number">1.4.</span> <span class="nav-text">四</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#我为什么要养一只猫"><span class="nav-number">1.</span> <span class="nav-text">我为什么要养一只猫？</span></a></li></ol></div>
             
 
           </div>

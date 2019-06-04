@@ -97,27 +97,38 @@
 
 
 
-  <meta name="description" content="记一次苹果内购刷单bug修复 一 某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug 二 心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现内购订单数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:  家里有矿的土豪们闲的发慌，充钱玩(心里偏">
-<meta name="keywords" content="bug,apple store">
+  <meta name="description" content="随笔 今日下午在看视频，斯丢匹德躺在我大腿上睡着了，还打呼。  斯丢匹德  在它的影响下，我也看睡着了（失眠的人是不是可以考虑下养只猫），然后就躺到了床上睡觉，过了一会儿感觉胸口好像被什么东西压住，原来是这个小家伙趴在被子上睡觉。 一想到明天还要上班，不禁扪心自问：难道今天还要这么颓废睡半天吗？逢春不游乐，但恐是痴人。于是说服了自己去爬个老和山（反正当我想做某件事情的时候总能找出很多理">
+<meta name="keywords" content="随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="记一次苹果内购刷单bug修复">
-<meta property="og:url" content="https://tomames.github.io/post/431172b6.html">
+<meta property="og:title" content="2019.04.14">
+<meta property="og:url" content="https://tomames.github.io/post/e3d56218.html">
 <meta property="og:site_name" content="风烟俱净，天山共色">
-<meta property="og:description" content="记一次苹果内购刷单bug修复 一 某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug 二 心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现内购订单数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:  家里有矿的土豪们闲的发慌，充钱玩(心里偏">
+<meta property="og:description" content="随笔 今日下午在看视频，斯丢匹德躺在我大腿上睡着了，还打呼。  斯丢匹德  在它的影响下，我也看睡着了（失眠的人是不是可以考虑下养只猫），然后就躺到了床上睡觉，过了一会儿感觉胸口好像被什么东西压住，原来是这个小家伙趴在被子上睡觉。 一想到明天还要上班，不禁扪心自问：难道今天还要这么颓废睡半天吗？逢春不游乐，但恐是痴人。于是说服了自己去爬个老和山（反正当我想做某件事情的时候总能找出很多理">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://wx4.sinaimg.cn/large/8d2ab563ly1g0t1rjvr9nj215v0mv78u.jpg">
-<meta property="og:updated_time" content="2019-03-06T06:16:22.507Z">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/8d2ab563ly1g22laoil4lj21400u0764.jpg">
+<meta property="og:image" content="https://wx1.sinaimg.cn/large/8d2ab563ly1g22lmxhaznj20u01hcjtj.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/8d2ab563ly1g22lslwuzxj20u0140q7u.jpg">
+<meta property="og:image" content="https://wx3.sinaimg.cn/large/8d2ab563ly1g22lvehpd4j20u0140dme.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/8d2ab563ly1g22lzuwou2j20u0140jxq.jpg">
+<meta property="og:image" content="https://wx1.sinaimg.cn/large/8d2ab563ly1g22m3nequzj20u0140aez.jpg">
+<meta property="og:image" content="https://wx4.sinaimg.cn/large/8d2ab563ly1g22m0d93rsj20u0140ae5.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/8d2ab563ly1g22m0kgg5sj20u0140djd.jpg">
+<meta property="og:image" content="https://ws2.sinaimg.cn/large/8d2ab563ly1g22m510u7cj21400u0wj6.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/8d2ab563ly1g22majpik2j21400u0dmq.jpg">
+<meta property="og:image" content="https://wx2.sinaimg.cn/large/8d2ab563ly1g22mcl4o87j20u0140q6b.jpg">
+<meta property="og:image" content="https://wx3.sinaimg.cn/large/8d2ab563ly1g22md2oqmoj20u0140jtv.jpg">
+<meta property="og:updated_time" content="2019-06-04T05:50:28.986Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="记一次苹果内购刷单bug修复">
-<meta name="twitter:description" content="记一次苹果内购刷单bug修复 一 某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug 二 心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现内购订单数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:  家里有矿的土豪们闲的发慌，充钱玩(心里偏">
-<meta name="twitter:image" content="https://wx4.sinaimg.cn/large/8d2ab563ly1g0t1rjvr9nj215v0mv78u.jpg">
+<meta name="twitter:title" content="2019.04.14">
+<meta name="twitter:description" content="随笔 今日下午在看视频，斯丢匹德躺在我大腿上睡着了，还打呼。  斯丢匹德  在它的影响下，我也看睡着了（失眠的人是不是可以考虑下养只猫），然后就躺到了床上睡觉，过了一会儿感觉胸口好像被什么东西压住，原来是这个小家伙趴在被子上睡觉。 一想到明天还要上班，不禁扪心自问：难道今天还要这么颓废睡半天吗？逢春不游乐，但恐是痴人。于是说服了自己去爬个老和山（反正当我想做某件事情的时候总能找出很多理">
+<meta name="twitter:image" content="https://ws2.sinaimg.cn/large/8d2ab563ly1g22laoil4lj21400u0764.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="https://tomames.github.io/post/431172b6.html">
+  <link rel="canonical" href="https://tomames.github.io/post/e3d56218.html">
 
 
 
@@ -127,7 +138,7 @@
   };
 </script>
 
-  <title>记一次苹果内购刷单bug修复 | 风烟俱净，天山共色</title>
+  <title>2019.04.14 | 风烟俱净，天山共色</title>
   
 
 
@@ -330,7 +341,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/431172b6.html">
+    <link itemprop="mainEntityOfPage" href="https://tomames.github.io/post/e3d56218.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tomames">
@@ -347,7 +358,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">记一次苹果内购刷单bug修复
+          <h2 class="post-title" itemprop="name headline">2019.04.14
 
               
             
@@ -373,7 +384,7 @@
                 
               
 
-              <time title="创建时间：2018-10-13 16:18:20" itemprop="dateCreated datePublished" datetime="2018-10-13T16:18:20+08:00">2018-10-13</time>
+              <time title="创建时间：2019-04-14 23:19:51" itemprop="dateCreated datePublished" datetime="2019-04-14T23:19:51+08:00">2019-04-14</time>
             
 
             
@@ -390,7 +401,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-06 14:16:22" itemprop="dateModified" datetime="2019-03-06T14:16:22+08:00">2019-03-06</time>
+                <time title="修改时间：2019-06-04 13:50:28" itemprop="dateModified" datetime="2019-06-04T13:50:28+08:00">2019-06-04</time>
               
             
           </span>
@@ -407,7 +418,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/programming/" itemprop="url" rel="index"><span itemprop="name">编程</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/life/" itemprop="url" rel="index"><span itemprop="name">生活</span></a></span>
 
                 
                 
@@ -442,24 +453,49 @@
       
 
       
-        <h3 id="记一次苹果内购刷单bug修复">记一次苹果内购刷单bug修复</h3>
-<h4 id="一">一</h4>
-<p>某一天，产品经理从后台的统计数据中发现苹果内购的销售额数量巨大，然后反馈给我，是不是代 码出现了bug</p>
-<h4 id="二">二</h4>
-<p>心里一慌，莫不是统计代码出现bug了，但是最近没有修改过代码，并且只是苹果内购出现了问 题，所以问题定位到苹果内购上面。去查数据库，果然发现<code>内购订单</code>数量暴涨，而且金额巨大。 接下来开始找问题产生的原因:</p>
-<ol type="1">
-<li>家里有矿的土豪们闲的发慌，充钱玩(心里偏向于这条原因)</li>
-<li>网站被人植入了后门，直接向数据库中写订单数据</li>
-<li>苹果内购支付验证有漏洞</li>
-</ol>
-<h4 id="三">三</h4>
-<p>开始排查原因 1. 查苹果App Store的销售记录，只能查看前一天的数据，先暂停一下，第二天接着查 2. 联想到前几天的云盾报告<code>可疑的WebShell通信行为</code>，凭直觉认为这个嫌疑很大，但是花费大 量时间也没在服务器中找到问题，瞬间觉得自己应该去买几本白帽子的书学习一下，暂时放 弃。换个思路，发现不只是数据库中有订单信息，相应的日志也一应俱全，所以客户应该是 走的正常支付流程，只是付款的时候出现了纰漏。定位到第3点 3. 上网一查，发现吐槽内购的有帖子很多，第3点的嫌疑又增大了一点，一看代码发现前辈们把 苹果服务器返回的<code>status==0</code> 就当成了支付成功，而没有验证<code>product_id</code> 和 <code>transaction_id</code>，导致越狱用户能够伪造<code>receipt_data</code> ，伪造的receipt_data 苹果校 验也返回支付成功。从日志文件中发现刷单用户的receipt_data 都是同一个数据，问题原 因基本锁定在第三点了。</p>
-<h4 id="四">四</h4>
-<p>内购订单验证</p>
-<p>url : https://buy.itunes.apple.com/verifyReceipt</p>
-<p>method : post</p>
-<p>params : receipt-data</p>
-<p><img src="https://wx4.sinaimg.cn/large/8d2ab563ly1g0t1rjvr9nj215v0mv78u.jpg"></p>
+        <h3 id="随笔">随笔</h3>
+<p>今日下午在看视频，斯丢匹德躺在我大腿上睡着了，还打呼。</p>
+<figure>
+<img src="https://ws2.sinaimg.cn/large/8d2ab563ly1g22laoil4lj21400u0764.jpg" alt="斯丢匹德"><figcaption>斯丢匹德</figcaption>
+</figure>
+<p>在它的影响下，我也看睡着了（失眠的人是不是可以考虑下养只猫），然后就躺到了床上睡觉，过了一会儿感觉胸口好像被什么东西压住，原来是这个小家伙趴在被子上睡觉。</p>
+<p>一想到明天还要上班，不禁扪心自问：难道今天还要这么颓废睡半天吗？逢春不游乐，但恐是痴人。于是说服了自己去爬个老和山（反正当我想做某件事情的时候总能找出很多理由说服自己）。</p>
+<figure>
+<img src="https://wx1.sinaimg.cn/large/8d2ab563ly1g22lmxhaznj20u01hcjtj.jpg" alt="追风少年"><figcaption>追风少年</figcaption>
+</figure>
+<p>西溪湿地有很多汉服小姐姐小哥哥出没。</p>
+<p>进了树丛就能感觉到沁人心脾的清凉，拾级而上，能遇见许多同道中人。</p>
+<figure>
+<img src="https://ws1.sinaimg.cn/large/8d2ab563ly1g22lslwuzxj20u0140q7u.jpg" alt="青石台阶"><figcaption>青石台阶</figcaption>
+</figure>
+<p>温馨的父子俩，小朋友还唱着李叔同的《送别》：长亭外，古道边，芳草碧连天...</p>
+<figure>
+<img src="https://wx3.sinaimg.cn/large/8d2ab563ly1g22lvehpd4j20u0140dme.jpg" alt="温馨的父子俩"><figcaption>温馨的父子俩</figcaption>
+</figure>
+<p>路边开着形形色色的花，也为旅途增色不少。</p>
+<p><img src="https://ws2.sinaimg.cn/large/8d2ab563ly1g22lzuwou2j20u0140jxq.jpg"></p>
+<p><img src="https://wx1.sinaimg.cn/large/8d2ab563ly1g22m3nequzj20u0140aez.jpg"></p>
+<p><img src="https://wx4.sinaimg.cn/large/8d2ab563ly1g22m0d93rsj20u0140ae5.jpg"></p>
+<p><img src="https://ws3.sinaimg.cn/large/8d2ab563ly1g22m0kgg5sj20u0140djd.jpg"></p>
+<p>画质感人。拍照技术烂得不行啊！</p>
+<p>偶遇一位在山顶看书的大佬，悄悄偷拍了一张。</p>
+<figure>
+<img src="https://ws2.sinaimg.cn/large/8d2ab563ly1g22m510u7cj21400u0wj6.jpg" alt="山巅读书人"><figcaption>山巅读书人</figcaption>
+</figure>
+<p>大佬的对面就是西湖，可谓是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">湖光山色尽收眼底</span><br><span class="line">鸟语花香皆在身旁</span><br><span class="line">身体和灵魂都在路上</span><br></pre></td></tr></table></figure>
+<p>下山的时候还发现了一辆小黄车，莫非小黄车的性能这么好了。。</p>
+<figure>
+<img src="https://ws1.sinaimg.cn/large/8d2ab563ly1g22majpik2j21400u0dmq.jpg" alt="孤零零的小黄车"><figcaption>孤零零的小黄车</figcaption>
+</figure>
+<p>还有一只不怕生人，会无影头神功的大猫</p>
+<p><img src="https://wx2.sinaimg.cn/large/8d2ab563ly1g22mcl4o87j20u0140q6b.jpg"></p>
+<figure>
+<img src="https://wx3.sinaimg.cn/large/8d2ab563ly1g22md2oqmoj20u0140jtv.jpg" alt="猫界大佬"><figcaption>猫界大佬</figcaption>
+</figure>
+<p>我家斯丢匹德一有风吹草动就躲进小树林了，还没把它的胆子练出来。。</p>
+<p>快到西溪路的时候还发现2个汉子在<code>辽E</code>的车子旁边相对而坐，正在吃饭，边上还有野炊的餐具。这才是浪迹天涯吧！</p>
+<p>我也曾梦想浪迹天涯，后来bug多没去！.jpg</p>
 
       
     </div>
@@ -483,9 +519,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/bug/" rel="tag"><i class="fa fa-fw fa-tags"></i> bug</a>
-          
-            <a href="/tags/apple-store/" rel="tag"><i class="fa fa-fw fa-tags"></i> apple store</a>
+            <a href="/tags/essay/" rel="tag"><i class="fa fa-fw fa-tags"></i> 随笔</a>
           
         </div>
       
@@ -498,14 +532,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/post/d94077ee.html" rel="next" title="入手港行T480s">
+                <i class="fa fa-chevron-left"></i> 入手港行T480s
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/e86019d.html" rel="prev" title="win10专业版激活">
-                win10专业版激活 <i class="fa fa-chevron-right"></i>
+              <a href="/post/554a890d.html" rel="prev" title="我为什么要养一只猫？">
+                我为什么要养一只猫？ <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -700,7 +738,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#记一次苹果内购刷单bug修复"><span class="nav-number">1.</span> <span class="nav-text">记一次苹果内购刷单bug修复</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一"><span class="nav-number">1.1.</span> <span class="nav-text">一</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二"><span class="nav-number">1.2.</span> <span class="nav-text">二</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三"><span class="nav-number">1.3.</span> <span class="nav-text">三</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四"><span class="nav-number">1.4.</span> <span class="nav-text">四</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#随笔"><span class="nav-number">1.</span> <span class="nav-text">随笔</span></a></li></ol></div>
             
 
           </div>
