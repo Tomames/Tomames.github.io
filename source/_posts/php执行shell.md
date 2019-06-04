@@ -15,7 +15,7 @@ date: 2019-06-04 13:53:10
 
 最近收到一个奇葩的需求：后台需要添加子站
 
-![4E58DB7B](https://ws4.sinaimg.cn/mw690/8d2ab563ly1g3p35bbkvdj208c08cdfw.jpg)
+![](https://ws4.sinaimg.cn/mw690/8d2ab563ly1g3p35bbkvdj208c08cdfw.jpg)
 
 主站是`www.abc.com`，后台需要添加`huaji.abc.com`,`gaoxiao.abc.com`等子站，内容基本一致，就是修改下网站的`title,logo`等信息
 
